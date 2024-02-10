@@ -1,0 +1,41 @@
+
+.about-me-grid {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+    height: calc(100vh - 250px);
+}
+
+.name-text {
+    font-weight: 900;
+    font-size: 40px;
+    word-spacing: 25px;
+}
+
+.info-animation {
+    font-size: 20px;
+}
+
+.description {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 100px;
+}
+
+.skill-style {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(153,153,153,.2);
+    font-weight: 500;
+    padding: 10px 15px;
+    white-space: nowrap;
+}
