@@ -1,0 +1,32 @@
+footer {
+    margin-left: 0 auto;
+    display: flex;
+    background-color: black;
+    height: 100px;
+}
+
+.footer-left-section {
+    color: white;
+    width: 300px;
+    margin-left: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+    display: grid;
+    align-items: center;
+}
+
+.footer-right-section {
+    color: white;
+    flex: 1;
+    margin-right: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    grid-template-columns: repeat(3, 50px);
+    font-size: 30px;
+}
+
+.social-link {
+    text-decoration: none;
+    color: white;
+}

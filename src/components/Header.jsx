@@ -4,7 +4,7 @@ import HeaderRoute from '../routes/HeaderRoute';
 
 export default function Header() {
     return (
-        <div className="header">
+        <header>
             <div className="left-section">
                 <img className="my-picture" src={image} alt="my face :p"/>
                 <div className="my-name">FARHANA ZULAIKHA</div>
@@ -12,6 +12,6 @@ export default function Header() {
             <div className="right-section">
                 <HeaderRoute/>
             </div>
-        </div>
+        </header>
     )
 }
