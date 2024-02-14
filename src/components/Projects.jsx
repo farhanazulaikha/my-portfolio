@@ -4,7 +4,7 @@ import Title from './Title'
 
 export default function Projects() {
     return(
-        <div className="projects">
+        <div className="projects" >
             <Title titleStyle={'project-title'}>Projects</Title>
             <div className="projects-grid">
                 {projects.map(project => (

@@ -5,7 +5,7 @@ export default function AboutMe() {
     const skills = ["React", "Express.js", "Vue.js", "HTML", "CSS", "JavaScript", "MongoDB", "MySQL", "SQL Server"];
 
     return(
-        <div className="about-me-grid" id="aboutme">
+        <div className="about-me-grid">
             <div className="name-text">Farhana Zulaikha binti Fadzli</div>
             <div className="info-animation">
                 {" "}

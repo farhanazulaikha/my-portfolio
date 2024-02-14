@@ -24,7 +24,7 @@ export default function Contact() {
     }
 
     return (
-        <div>
+        <div className="contact">
             <Title titleStyle={'contact-title'}>Contact</Title>
             <div className="contact-container">
                 <form onSubmit={handleSubmit}>
