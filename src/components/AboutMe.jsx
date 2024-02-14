@@ -1,12 +1,11 @@
 import '../assets/styles/about-me.css';
 import { ReactTyped } from 'react-typed';
-import Title from './Title';
 
 export default function AboutMe() {
     const skills = ["React", "Express.js", "Vue.js", "HTML", "CSS", "JavaScript", "MongoDB", "MySQL", "SQL Server"];
 
     return(
-        <div className="about-me-grid">
+        <div className="about-me-grid" id="aboutme">
             <div className="name-text">Farhana Zulaikha binti Fadzli</div>
             <div className="info-animation">
                 {" "}
@@ -20,14 +19,12 @@ export default function AboutMe() {
                 />
             </div>
             <div className="description">
-                I am a junior web developer with a keen interest in 
-                front-end development. Currently, I am brushing up my 
-                skills in JavaScript framework, specifically React, and 
-                delving deeply into responsive design for web applications. My skills include:
+                Junior developer with a keen interest in 
+                front-end development, especially responsive web design.
             </div>
             <div className="skills-grid">
-                {skills.map(skill => (
-                    <div className="skill-style">{ skill }</div>
+                {skills.map((skill, index) => (
+                    <div className="skill-style" key={index}>{ skill }</div>
                 ))}
             </div>
         </div>
