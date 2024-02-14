@@ -47,4 +47,8 @@ header {
     cursor: pointer;
     font-size: 15px;
     margin-right: 30px;
+
+    &:hover {
+        border-bottom: 1px solid #333;
+    }
 }
