@@ -7,12 +7,6 @@
     height: calc(100vh - 250px);
 }
 
-@media (max-height: 600px) {
-    .about-me-grid {
-      height: unset;
-    }
-}
-
 .name-text {
     font-weight: 900;
     font-size: 40px;
@@ -31,7 +25,7 @@
 
 .skills-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     justify-content: center;
     row-gap: 20px;
     column-gap: 100px;
@@ -44,4 +38,62 @@
     font-weight: 700;
     padding: 10px 15px;
     white-space: nowrap;
+}
+
+@media (max-width: 750px) {
+    .name-text {
+        font-size: 30px;
+    }
+    
+    .skill-style {
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(153,153,153,.2);
+        font-weight: 700;
+        padding: 10px 15px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .name-text {
+        font-size: 28px;
+    }
+    
+    .info-animation {
+        font-size: 15px;
+    }
+    
+    .description {
+        width: 60%;
+        font-size: 15px;
+    }
+    
+    .skills-grid {
+        column-gap: 70px;
+    }
+    
+    .skill-style {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .name-text {
+        font-size: 25px;
+    }
+    
+    .skills-grid {
+        column-gap: 50px;
+    }
+    
+    .skill-style {
+        font-size: 13px;
+    }
+}
+
+@media (max-height: 600px) {
+    .about-me-grid {
+      height: unset;
+    }
 }
