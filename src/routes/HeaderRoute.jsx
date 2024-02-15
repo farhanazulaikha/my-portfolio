@@ -57,6 +57,7 @@ export default function HeaderRoute() {
                             smooth={true}
                             offset={-150}
                             duration={500}
+                            className="nav-menu-link-about-me"
                             onClick={handleMenu}
                         >
                                 About Me
@@ -67,6 +68,7 @@ export default function HeaderRoute() {
                             smooth={true}
                             offset={-150}
                             duration={500}
+                            className="nav-menu-link-projects"
                             onClick={handleMenu}
                         >
                                 Projects
@@ -77,6 +79,7 @@ export default function HeaderRoute() {
                             smooth={true}
                             offset={-150}
                             duration={500}
+                            className="nav-menu-link-contact"
                             onClick={handleMenu}
                         >
                                 Contact

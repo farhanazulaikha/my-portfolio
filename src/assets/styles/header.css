@@ -120,6 +120,11 @@ header {
     text-align: center;
 }
 
+.nav-menu-link-about-me:hover, .nav-menu-link-projects:hover, .nav-menu-link-contact:hover {
+    border-bottom: 1px solid #333;
+
+}
+
 @media (max-width: 750px) {
     header {
         height: 100px;
