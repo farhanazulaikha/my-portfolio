@@ -20,7 +20,7 @@ export default function AboutMe() {
             </div>
             <div className="description">
                 Junior developer with a keen interest in 
-                front-end development, especially responsive web design.
+                front-end development.
             </div>
             <div className="skills-grid">
                 {skills.map((skill, index) => (
