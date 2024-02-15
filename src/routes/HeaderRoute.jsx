@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import Button from "../components/Button";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircleOutline } from "react-icons/io5";
+import farhanaResume from '../assets/pdf/FARHANAZULAIKHA_RESUME.pdf'
 
 export default function HeaderRoute() {
 
@@ -45,10 +45,10 @@ export default function HeaderRoute() {
                 >
                         Contact
                 </Link>
-                <Button buttonStyle={'resume-button'}>Resume</Button>
+                <a className="resume-link" href={farhanaResume} download="FARHANAZULAIKHA_RESUME.pdf" target="_blank">&#8681; Resume</a>
             </div>
             { open ? 
-                <div className="nav-menu">
+                <div className="nav-menu-open">
                     <div className="nav-menu-close"><button className="close-menu-button" onClick={handleMenu}><IoCloseCircleOutline /></button></div>
                     <div className="nav-menu-link">
                         <Link
