@@ -85,6 +85,7 @@ export default function HeaderRoute() {
                         >
                                 Contact
                         </Link>
+                        <a className="nav-menu-link-resume" href={farhanaResume} download="FARHANAZULAIKHA_RESUME.pdf" target="_blank">&#8681; Resume</a>
                     </div>
                 </div>
                 :

@@ -119,7 +119,12 @@ header {
     text-align: center;
 }
 
-.nav-menu-link-about-me:hover, .nav-menu-link-projects:hover, .nav-menu-link-contact:hover {
+.nav-menu-link-resume {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu-link-about-me:hover, .nav-menu-link-projects:hover, .nav-menu-link-contact:hover, .nav-menu-link-resume:hover {
     border-bottom: 1px solid #333;
 
 }
