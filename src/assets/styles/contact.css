@@ -33,7 +33,7 @@ form {
     margin-bottom: 10px;
 }
 
-::placeholder {
+textarea, input {
     font-family: Montserrat, Arial;
 }
 

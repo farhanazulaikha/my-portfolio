@@ -13,15 +13,12 @@ export default function Contact() {
     const handleName = (e) => {
         setFullName(e.target.value);
     }
-
     const handleMessage = (e) => {
         setMessage(e.target.value);
     }
-
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_ccervjr', 'template_wgaxhge', form.current, 'uNpp6Oe7kZ4Brkcxb')
+        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_USER_ID)
     }
 
     return (
@@ -31,11 +28,11 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} ref={form}>
                     <div className="form-field">
                         <label htmlFor="name" className="label-field">Name</label>
-                        <input type="text" name="fullName" value={fullName} onChange={handleName} required placeholder="Enter Your Name" className="input-field"></input>
+                        <input type="text" name="fullName" value={fullName} onChange={handleName} required placeholder="Enter your name" className="input-field"></input>
                     </div>
                     <div className="form-field">
                         <label htmlFor="message" className="label-field">Message</label>
-                        <textarea value={message} name="message" onChange={handleMessage} placeholder="Enter Your Message. Please include your contact details." required className="input-field"></textarea>
+                        <textarea value={message} name="message" onChange={handleMessage} placeholder="Enter your message, including your contact details." required className="input-field"></textarea>
                     </div>
                     <div className="submit-button">
                         <button id="openModal" type="submit">Submit</button>
