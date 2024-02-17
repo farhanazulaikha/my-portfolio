@@ -9,8 +9,8 @@ const projects = [
         name: "My Portfolio",
         year: "2024",
         description: "My portfolio which showcases my list of skills and projects as a web developer.",
-        githubLink: "https://youtu.be/hUkPu5Pz7SY?si=Lltmbvhq6WTK4q-1",
-        liveLink: "https://youtu.be/hUkPu5Pz7SY?si=Lltmbvhq6WTK4q-1"
+        githubLink: "https://github.com/farhanazulaikha/my-portfolio",
+        liveLink: "https://farhanaf-portfolio.netlify.app/"
     },
     {
         id: 2,
