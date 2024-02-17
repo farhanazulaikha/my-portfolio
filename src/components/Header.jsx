@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header>
             <div className="left-section">
-                <img className="my-picture" src={image} alt="my face :p"/>
+                <img loading="lazy" className="my-picture" src={image} alt="my face :p"/>
                 <div className="my-name">FARHANA ZULAIKHA</div>
             </div>
             <div className="right-section">

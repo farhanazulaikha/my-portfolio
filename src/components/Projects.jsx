@@ -10,7 +10,7 @@ export default function Projects() {
                 {projects.map(project => (
                     <div className="project-info" key={project.id}>
                         <div className="image-row">
-                            <img src={project.image}/>
+                            <img loading="lazy" src={project.image}/>
                         </div>
                         <div className="project-info-grid">
                             <div className="project-name">{ project.name }</div>
