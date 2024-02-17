@@ -2,6 +2,8 @@ import Title from "./Title";
 import '../assets/styles/contact.css';
 import { useRef, useState } from "react";
 import emailjs from 'emailjs-com';
+import Modal from "./Modal";
+import Button from "./Button";
 
 export default function Contact() {
 
@@ -9,6 +11,7 @@ export default function Contact() {
 
     const [fullName, setFullName] = useState("");
     const [message, setMessage] = useState("");
+    const [modal, setModal] = useState(false);
 
     const handleName = (e) => {
         setFullName(e.target.value);
@@ -19,7 +22,14 @@ export default function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_USER_ID)
+        toggleModal();
+        setFullName("");
+        setMessage("");
     }
+
+    const toggleModal = () => {
+        setModal(!modal);
+    };
 
     return (
         <div className="contact">
@@ -34,11 +44,12 @@ export default function Contact() {
                         <label htmlFor="message" className="label-field">Message</label>
                         <textarea value={message} name="message" onChange={handleMessage} placeholder="Enter your message, including your contact details." required className="input-field"></textarea>
                     </div>
-                    <div className="submit-button">
-                        <button id="openModal" type="submit">Submit</button>
+                    <div className="submit-button-div">
+                        <Button buttonStyle={'submit-button'} type="submit">Submit</Button>
                     </div>
                 </form>
             </div>
+            <Modal toggleModal={toggleModal} modal={modal}>Your message has been submitted!</Modal>
         </div>
     )
 }

@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import farhanaResume from '../assets/pdf/FARHANAZULAIKHA_RESUME.pdf'
+import Button from "../components/Button";
 
 export default function HeaderRoute() {
 
@@ -49,7 +50,7 @@ export default function HeaderRoute() {
             </div>
             { open ? 
                 <div className="nav-menu-open">
-                    <div className="nav-menu-close"><button className="close-menu-button" onClick={handleMenu}><IoCloseCircleOutline /></button></div>
+                    <div className="nav-menu-close"><Button buttonStyle={'close-menu-button'} onClick={handleMenu}><IoCloseCircleOutline /></Button></div>
                     <div className="nav-menu-link">
                         <Link
                             to="about-me"
@@ -88,7 +89,7 @@ export default function HeaderRoute() {
                 </div>
                 :
                 <div className="hamburger-menu">
-                    <div className="hamburger-icon"><button className="hamburger-menu-button" onClick={handleMenu}><GiHamburgerMenu /></button></div>
+                    <div className="hamburger-icon"><Button buttonStyle={'hamburger-menu-button'} onClick={handleMenu}><GiHamburgerMenu /></Button></div>
                 </div>
             }
         </>
