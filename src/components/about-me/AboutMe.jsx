@@ -1,4 +1,4 @@
-import '../assets/styles/about-me.css';
+import './about-me.css';
 import { ReactTyped } from 'react-typed';
 
 export default function AboutMe() {

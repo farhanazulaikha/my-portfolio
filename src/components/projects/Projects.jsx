@@ -1,6 +1,6 @@
-import '../assets/styles/projects.css'
-import projects from '../assets/projects'
-import Title from './Title'
+import './projects.css'
+import projects from '../../assets/projects'
+import Title from '../Title'
 
 export default function Projects() {
     return(

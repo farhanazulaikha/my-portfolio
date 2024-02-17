@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/Header';
-import Projects from './components/Projects';
-import AboutMe from './components/AboutMe';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './components/Header/header';
+import AboutMe from './components/about-me/AboutMe';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 import { Element } from 'react-scroll';
 
 function App() {

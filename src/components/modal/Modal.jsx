@@ -1,4 +1,4 @@
-import Button from './Button';
+import Button from '../Button';
 import './modal.css';
 
 export default function Modal({ toggleModal, modal, children }) {  

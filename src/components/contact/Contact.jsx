@@ -1,9 +1,9 @@
-import Title from "./Title";
-import '../assets/styles/contact.css';
+import Title from "../Title";
+import './contact.css';
 import { useRef, useState } from "react";
 import emailjs from 'emailjs-com';
-import Modal from "./Modal";
-import Button from "./Button";
+import Modal from "../modal/Modal";
+import Button from "../Button";
 
 export default function Contact() {
 

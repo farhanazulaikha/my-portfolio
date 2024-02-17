@@ -1,6 +1,6 @@
-import '../assets/styles/header.css';
-import image from '../assets/images/cute-duck.jpg';
-import HeaderRoute from '../routes/HeaderRoute';
+import './header.css';
+import image from '../../assets/images/cute-duck.jpg';
+import HeaderRoute from '../../routes/HeaderRoute';
 
 export default function Header() {
     return (
