@@ -153,17 +153,6 @@ header {
     .link-about-me, .link-projects, .link-contact {
         margin-right: 15px;
     }
-
-    .resume-button {
-        margin-right: 10px;
-        border-radius: 30px;
-        border: 1px solid black;
-        font-weight: 700;
-        font-size: 13px;
-        padding: 5px 10px;
-    }
-
-
 }
 
 @media (max-width: 600px) {
